@@ -10,7 +10,11 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
+<<<<<<< HEAD
         "spatie/laravel-permission": "^6.9"
+=======
+        "spatie/laravel-permission": "^6.10"
+>>>>>>> ef35e66832508c1ac775cc42ec25220279364dd7
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -19,8 +23,12 @@
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^7.0",
+<<<<<<< HEAD
         "pestphp/pest": "^2.0",
         "pestphp/pest-plugin-laravel": "^2.0",
+=======
+        "phpunit/phpunit": "^10.1",
+>>>>>>> ef35e66832508c1ac775cc42ec25220279364dd7
         "spatie/laravel-ignition": "^2.0"
     },
     "autoload": {
