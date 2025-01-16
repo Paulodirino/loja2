@@ -1,33 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<h1>Cadastro de Produto</h1>
-@if ($errors->any())
-    @foreach($errors->all() as $error)
-        {{$error}} <br>
-    @endforeach
-@endif
-<form action="{{route('products.store')}}" method="post">
-    @csrf()
-    <label for="name">Nome:</label>
-    <input type="text" id="name" name="name" placeholder="Digite o nome do produto">
-    <br>
-    <label for="description">Descrição:</label>
-    <br>
-    <textarea id="description" name="description" rows="4" cols="50" placeholder="Digite a descrição do produto"></textarea>
-    <br>
-    <label for="price">Preço:</label>
-    <input type="number" id="price" name="price" step="0.01" placeholder="Digite o preço do produto">
-    <br>
-    <label for="stock">Estoque:</label>
-    <input type="number" id="stock" name="stock" placeholder="Digite a quantidade em estoque">
-    <br><br>
-    <input type="submit" value="Enviar">
-</form>
-=======
-=======
 @extends('product.layouts.app')
 @section('content')
->>>>>>> 2a4f93b8fb605bcfddad5f202f05fb7643aeb22d
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,8 +52,4 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-<<<<<<< HEAD
->>>>>>> ef35e66832508c1ac775cc42ec25220279364dd7
-=======
 @endsection 
->>>>>>> 2a4f93b8fb605bcfddad5f202f05fb7643aeb22d

@@ -4,8 +4,12 @@
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
 =======
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+<<<<<<< HEAD
 >>>>>>> ef35e66832508c1ac775cc42ec25220279364dd7
             {{ __('Dashboard') }}
+=======
+            {{ __(' ') }}
+>>>>>>> 2a4f93b8fb605bcfddad5f202f05fb7643aeb22d
         </h2>
     </x-slot>
 
@@ -17,8 +21,12 @@
 =======
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
+<<<<<<< HEAD
 >>>>>>> ef35e66832508c1ac775cc42ec25220279364dd7
                     {{ __("You're logged in!") }}
+=======
+                    {{ __("  ") }}
+>>>>>>> 2a4f93b8fb605bcfddad5f202f05fb7643aeb22d
                 </div>
             </div>
         </div>
