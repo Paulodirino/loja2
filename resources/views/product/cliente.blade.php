@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Cliente</title>
-   <!-- <style>
+    <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -36,7 +36,7 @@
         button:hover {
             background: #218838;
         }
-    </style>-->
+    </style>
 </head>
 <body>
     <h2>Cadastro de Cliente</h2>

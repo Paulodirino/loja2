@@ -4,6 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Vendedor</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
   
 </head>
 <body>
@@ -23,15 +57,3 @@
 </body>
 </html>
 
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome = htmlspecialchars($_POST["nome"]);
-    $email = htmlspecialchars($_POST["email"]);
-    $telefone = htmlspecialchars($_POST["telefone"]);
-    
-    echo "<h3>Dados Recebidos:</h3>";
-    echo "Nome: " . $nome . "<br>";
-    echo "E-mail: " . $email . "<br>";
-    echo "Telefone: " . $telefone . "<br>";
-}
-?>
