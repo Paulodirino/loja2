@@ -37,8 +37,7 @@
         button:hover {
             background: #218838;
         }
-    </style>
-  
+    </style> 
 </head>
 <body>
     <h2>Cadastro de Vendedor</h2>
