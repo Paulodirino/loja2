@@ -66,7 +66,22 @@ class ClienteController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(StoreUpdateclienteRequest $request, string $id)
+    public function update(Request $request, $id)
+{
+    $request->validate([
+        'nome' => 'required|string|max:255',
+        'email' => 'required|email|max:255',
+        'telefone' => 'required|string|max:20',
+        'endereco' => 'nullable|string|max:500',
+    ]);
+
+    $client = Client::findOrFail($id);
+    $client->update($request->only(['name', 'email', 'phone', 'address']));
+
+    return redirect()->route('clients.index')->with('success', 'Cliente atualizado com sucesso!');
+}
+
+   /* public function update(StoreUpdateclienteRequest $request, string $id)
     {
 
         $cliente = cliente::find ((int)$id);

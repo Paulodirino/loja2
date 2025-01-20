@@ -33,6 +33,8 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::resource('clientes', ClienteController::class)->middleware('role:Administrator');;
+    Route::put('/clients/{id}', [ClientController::class, 'update'])->name('clientes.update');
+
 });
 
 require __DIR__.'/auth.php';
